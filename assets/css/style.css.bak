@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url(../image/background-blue-geometric.jpg);
+  background-image: url(/assets/image/background-blue-geometric.jpg);
   background-size: cover;
   position: relative;
 }
