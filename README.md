@@ -16,7 +16,7 @@
 
 ### Links
 
-- Solução URL: https://jogo-da-forca-dani-michely.netlify.app/
+- Solução URL: https://danimichelydev.github.io/jogo-da-forca-one/
 
 
 
