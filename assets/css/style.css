@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(/assets/image/background-blue-geometric.jpg);
+  background-size: cover;
+  position: relative;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.esquerdo {
+  width: 300px;
+}
+.esquerdo .texto {
+  width: 300px;
+  height: 170px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.58);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.4px);
+  -webkit-backdrop-filter: blur(6.4px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.texto p {
+  padding: 20px 10px;
+  font-size: 1.4rem;
+}
+.titulo {
+  padding: 10px;
+  width: auto;
+  margin: 50px auto 20px auto;  
+  color: rgb(17, 17, 139);
+}
+  
+.btn {
+  border: 0;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(20, 20, 139, 0.771);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 0.5em;
+  border: 2px solid rgb(24, 9, 90);
+}
+  
+.text-input {
+  border-radius: 0.5em;
+  border: 1px solid rgba(5, 14, 80, 0.2);
+  display: block;
+  padding: 0.5em;
+  width: 30%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+.btn:hover {   
+  color: blue;
+  background-color: white;
+  /* border: .05em solid blue; */
+}
+
+.modal {
+  position: relative;
+}
+.venceu-modal, .perdeu-modal {
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  background-color: rgba(9, 9, 135, 0.697);
+  top: -400px;
+  left: calc(50vw - 250px);
+}
+.venceu-modal p, .perdeu-modal p{
+  color: #FFF;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 50px;
+}
+.venceu-modal aside, .perdeu-modal aside{
+  color: #FFF;
+  font-size: 20px;
+  background-color: rgb(56, 16, 233);
+  display: inline-block;
+  padding: 2px 7px;
+  border-radius: 50%;
+  font-weight: 700;
+  border: 3px solid rgb(34, 30, 159);
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  cursor: pointer; 
+}
+
+.venceu-modal aside:hover, .perdeu-modal aside:hover{
+   background-color: black;
+}
+.venceu-modal {
+  display: none;
+}
+
+.perdeu-modal {
+  display: none;
+}
+
+.exibe-palavra-secreta {
+  font-weight: 500;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+footer {
+  position: fixed;
+  bottom: -0;
+  background-color: rgb(5, 5, 98);
+}
+footer p {
+  color: #FFF;
+  padding: 5px;
+}
+footer a {
+  color: rgb(231, 189, 189);
+}
+footer a:hover {
+  color: #FFF;
+}

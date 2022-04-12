@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body>
+
+    <main>    
+      <div class="esquerdo" style="text-align:center; margin: 50px 0px;">
+        <h1 class="titulo">Jogo da Forca</h1>
+        <button class="btn" id="start-game">INICIAR JOGO</button>
+        <div class="texto">
+          <p>Ao iniciar o jogo, basta digitar as letras no seu teclado para começar a jogar!
+          <br>Bom jogo! </p>
+        </div>  
+      </div>
+  
+      <div style="text-align:center;" id="tabuleiro">
+        <canvas id="forca" height="530px" width="800px"></canvas>
+      </div>
+    </main>
+
+    <section class="modal">
+      <article class="venceu-modal show">
+        <aside class="close-winn">X</aside>
+        <p>Parabéns, você venceu!</p>
+      </article>
+
+      <article class="perdeu-modal">
+        <aside class="close-lose">X</aside>
+        <p>Você perdeu, a palavra secreta é <span class="exibe-palavra-secreta"></span>.
+          <br> Tente novamente!</p>
+      </article>
+    </section>
+
+    <footer>
+      <p>Desafio da Oracle Next Education proposto pela Alura feito por <a href="https://github.com/danimichelydev" target="_blank">Dani Michely</a></p>
+    </footer>
+
+    <script type="text/javascript" src="./assets/js/canvas.js"></script>
+    <script type="text/javascript" src="./assets/js/forca.js"></script>
+
+  </body>
+</html>
+
